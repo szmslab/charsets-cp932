@@ -9,7 +9,7 @@
 
   <name>charsets-cp932</name>
   <description>extended charset 'CP932'</description>
-  <url>http://maven.apache.org</url>
+  <url>https://github.com/szmslab/charsets-cp932</url>
 
   <licenses>
     <license>
@@ -21,6 +21,14 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
+
+  <distributionManagement>
+    <repository>
+      <id>maven.szmslab.com</id>
+      <name>Maven Temporary Repository</name>
+      <url>file://${env.HOME}/.mvn-temp-repository</url>
+    </repository>
+  </distributionManagement>
 
   <build>
     <plugins>
